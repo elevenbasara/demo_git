@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Tính điểm trung bình môn</h2>
+        <table>
+        <tr>
+            <td>Vật lý:</td>
+            <td>
+                <input type="text" id="vatly">
+            </td>
+        </tr>
+        <tr>
+            <td>Hóa học:</td>
+            <td>
+                <input type="text" id="hoa">
+            </td>
+        </tr>
+        <tr>
+            <td>Sinh học:</td>
+            <td>
+                <input type="text" id="sinh">
+            </td>
+        </tr>   
+        </table>
+        <br>
+        <button onclick="diem_trung_binh()">Tính điểm</button>
+        <br>
+        <h3 id="diemtrungbinh"></h3>
+    </div>
+    <br>
+    <div>
+        <h2>Chuyển từ độ C sang độ F</h2>
+        <br>
+        Độ C: <input type="text" id="doC">
+        <br>
+        <br>
+        <button onclick="doi_don_vi_nhiet()">Chuyển đổi</button>
+        <p id="doF"></p>
+    </div>
+    <br>
+    <div>
+        <h2>Tính lãi kép tiền gửi ngân hàng</h2>
+        <table>
+            <tr>
+                <td>Số tiền gửi:</td>
+                <td>
+                    <input type="text" id="money">
+                </td>
+            </tr>
+            <tr>
+                <td>Số tháng gửi:</td>
+                <td>
+                    <input type="text" id="month">
+                </td>
+            </tr>
+            <tr>
+                <td>Lãi suất năm:</td>
+                <td>
+                    <input type="text" id="rate">%
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="lai_kep()">Total</button>
+        <br>
+        <h3 id="result"></h3>
+    </div>
+    <script src="bai_tap.js"></script>
+</body>
+</html>
