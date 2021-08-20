@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai_tap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+<body>
+    <div class="game-board">
+        <img src="images/tank.png" alt="" id="tank" class="icon-tank" style="top:40px; left:40px;">
+    </div>
+    <table>
+        <tr>
+            <td></td>
+            <td><button onclick="moveUp()"><i class="fas fa-arrow-up"></i></button></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><button onclick="moveLeft()"><i class="fas fa-arrow-left"></i></button></td>
+            <td></td>
+            <td><button onclick="moveRight()"><i class="fas fa-arrow-right"></i></button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="moveDown()"><i class="fas fa-arrow-down"></i></button></td>
+            <td></td>
+        </tr>
+    </table>
+    <script src="bai_tap.js"></script>
+</body>
+</html>

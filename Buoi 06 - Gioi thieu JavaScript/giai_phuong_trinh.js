@@ -24,12 +24,12 @@ function giai_phuong_trinh_bac_hai(){
     } else{
         if(d <= 0){
             if(d==0){
-                document.getElementById('result2').innerHTML = 'PT có nghiệm khép x = '+ -b/2*a;
+                document.getElementById('result2').innerHTML = 'PT có nghiệm khép x = '+ -b/(2*a);
             } else{
                 document.getElementById('result2').innerHTML = 'PT vô nghiệm';
             }
         } else{
-            document.getElementById('result2').innerHTML = 'PT có 2 nghiệm x1 =' + (-b + Math.sqrt(d))/2*a + ' và x2 = ' + (-b - Math.sqrt(d))/2*a;
+            document.getElementById('result2').innerHTML = 'PT có 2 nghiệm x1 =' + (-b + Math.sqrt(d))/(2*a) + ' và x2 = ' + (-b - Math.sqrt(d))/2*a;
         }
     }
 }
