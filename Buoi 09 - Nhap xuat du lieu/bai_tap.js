@@ -64,3 +64,11 @@ function clearInput(){
     document.getElementById('input').value = '';
 }
 
+// hàm khi click btn del thì xóa 1 số ở cuối chuỗi input
+// hàm slice(0, -1) cắt chữ số cuối cùng trong chuỗi
+function Del(){
+    let input = document.getElementById('input').value;
+    let newInput = input.slice(0, -1);
+    document.getElementById('input').value = newInput;
+}
+
