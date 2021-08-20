@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai_tap.css">
+</head>
+<body>
+    <div>
+        <h2>Tính tuổi</h2>
+        Ngày sinh:</td>
+        <input type="date" id="birthday">
+        <br>
+        <button onclick="year()">Tính tuổi</button>
+        <p id="result-year"></p>
+    </div>
+    <br>
+    <div>
+        <h2>Máy tính phèn</h2>
+        Số thứ 1:
+        <input type="number" id="so_thu_1">
+        <select name="" id="toan_tu">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        Số thứ 2:
+        <input type="number" id="so_thu_2">
+        <button onclick="may_tinh_phen()">=</button>
+        <p id="result-may-tinh-phen"></p>
+    </div>
+    <br>
+    <div id="div3">
+        <h2>Máy tính bớt phèn</h2>
+        <table>
+            <tr>
+                <td colspan="4" style="height: 110px;">
+                    <input type="text" id="input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="top" onclick="clearInput()"><b>C</b></button>
+                </td>
+                <td>
+                    <button class="top" onclick="calculatorMinus()" ><b>+/-</b></button>
+                </td>
+                <td>
+                    <button class="top" onclick="calculatorPercent()"><b>%</b></button>
+                </td>
+                <td>
+                    <button class="operator"onclick="setInput('/')"><b>/</b></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="operand" onclick="setInput(7)"><b>7</b></button>
+                </td>
+                <td>
+                    <button class="operand" onclick="setInput(8)"><b>8</b></button>
+                </td>
+                <td>
+                    <button class="operand" onclick="setInput(9)"><b>9</b></button>
+                </td>
+                <td>
+                    <button class= "operator"onclick="setInput('*')"><b>*</b></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="operand" onclick="setInput(4)"><b>4</b></button>
+                </td>
+                <td>
+                    <button class="operand" onclick="setInput(5)"><b>5</b></button>
+                </td>
+                <td>
+                    <button class="operand" onclick="setInput(6)"><b>6</b></button>
+                </td>
+                <td>
+                    <button class="operator" onclick="setInput('-')"><b>-</b></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="operand" onclick="setInput(1)"><b>1</b></button>
+                </td>
+                <td>
+                    <button class="operand" onclick="setInput(2)"><b>2</b></button>
+                </td>
+                <td>
+                    <button class="operand" onclick="setInput(3)"><b>3</b></button>
+                </td>
+                <td>
+                    <button class="operator" onclick="setInput('+')"><b>+</b></button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="operand" style="border-radius:40px;" onclick="setInput(0)"><b>0</b></button>
+                </td>
+                <td>
+                    <button class="operand" onclick="setInput('.')"><b>.</b></button>
+                </td>
+                <td>
+                    <button class="operator" id="result" onclick="calculator()"><b>=</b></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="bai_tap.js"></script>
+</body>
+</html>

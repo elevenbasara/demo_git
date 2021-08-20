@@ -1,0 +1,53 @@
+/*css cho máy tính bớt phèn*/
+table {
+    width: 315px;
+    border: 2px solid;
+    padding: 5px;
+    background: black;
+    border-radius: 10px;
+}
+td, tr {
+    width:70px;
+    height: 70px;
+}
+#div3 button{
+    width:95%;
+    height: 95%;
+    border-radius: 50%;
+    border:none;
+}
+#div3 input{
+    width:97%;
+    height: 90%;
+    border: none;
+    font-size: 32px;
+    background: black;
+    color: white;
+    text-align: right;
+}
+b{
+    font-size: 25px;
+}
+.operator{
+    background: orange;
+    color: white;
+}
+.top{
+    background: rgb(218, 215, 215);
+}
+.operand{
+    background: rgb(70, 69, 69);
+    color:white;
+}
+.operator:hover{
+    background: white;
+    color: orange;
+}
+.top:hover{
+    color: black;
+    background: grey ;
+}
+.operand:hover{
+    background: whitesmoke;
+    color: black;
+}

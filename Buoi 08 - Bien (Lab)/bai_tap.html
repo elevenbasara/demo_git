@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #table3 td{
+            width: 150px;
+        }
+        #table3 input, #table3 select{
+            width: 110px;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -52,6 +60,39 @@
             Anh yêu thương, đừng bao giờ rời xa em nữa nhé. Yêu anh rất nhiều.
         </p>
         <p id="cuoi"></p>
+    </div>
+    <br>
+    <div>
+        <h2>Chuyển đổi tiền tệ</h2>
+        <table id="table3">
+            <tr>
+                <td>Amount</td>
+                <td>From Currency</td>
+                <td>To Currency</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="money" type="text">
+                </td>
+                <td>
+                    <select id="from">
+                        <option value="23000">VND</option>
+                        <option value="1">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="to">
+                        <option value="23000">VND</option>
+                        <option value="1">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <button onclick="convert_currency()">Convert</button>
+                </td>
+            </tr>
+        </table>
+        <p id="convert-result"></p>
     </div>
     <script src="bai_tap.js"></script>
 </body>
