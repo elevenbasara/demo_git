@@ -1,10 +1,17 @@
-.game-board{
+.game-board {
     width: 400px;
     height: 400px;
     border: 1px solid red;
     position: relative;
 }
-.icon-tank{
+
+#tank {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#boom {
     width: 50px;
     height: 50px;
     position: absolute;

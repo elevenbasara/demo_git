@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>Đổi năm âm</h2>
+        Lịch dương 
+        <input type="date" id="birthday" onchange="doi_nam_am_lich()">
+        <h4 id="result"></h4>
+    </div>
+    <br>
+    <div>
+        <h2>Tìm năm nhuận</h2>
+        Year
+        <input type="date" id="year" onchange="leapYear()">
+        <h4 id="result-year"></h4>
+    </div>
+    <br>
+    <div>
+        <h2>Xem độ phù hợp</h2>
+        <table>
+            <tr>
+                <td>Ngày sinh nam</td>
+                <td>Ngày sinh nữ</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="date" id="birthday-male"></td>
+                <td><input type="date" id ="birthday-female"></td>
+                <td>
+                    <button onclick="xem_boi()">Xem bói</button>
+                </td>
+            </tr>
+        </table>
+        <h4 id="result-xem-boi"></h4>
+    </div>
+    <script src="bai_tap.js"></script>
+</body>
+
+</html>
