@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Kiểm tra nguyên âm, phụ âm</h2>
+        <input id="input" type="text" maxlength="1">
+        <button onclick="nguyen_am()">Kiểm tra</button>
+        <br>
+        <p id="result"></p>
+    </div>
+    <br>
+    <div>
+        <h2>Tính điểm đại học khối D</h2>
+        <table>
+            <tr>
+                <td>Môn toán</td>
+                <td><input type="text" id="toan" placeholder="Nhập số"></td>
+            </tr>
+            <tr>
+                <td>Môn văn</td>
+                <td><input type="text" id="van" placeholder="Nhập số"></td>
+            </tr>
+            <tr>
+                <td>Môn anh</td>
+                <td><input type="text" id="anh" placeholder="Nhập số"></td>
+            </tr>
+            <tr>
+                <td>Khu vực</td>
+                <td>
+                    <select name="" id="khuvuc">
+                        <option value="KV1">KV1</option>
+                        <option value="KV2">KV2</option>
+                        <option value="KV2-NT">KV2-NT</option>
+                        <option value="KV3">KV3</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="diem_dai_hoc()">Tính điểm</button>
+        <p id="total-mark"></p>
+    </div>
+    <br>
+    <div>
+        <h2>Câu hỏi trắc nghiệm chủ nghĩa Mác Lênin</h2>
+        1. Bản chất đầy đủ của con người là gì?  
+        <br>
+        <input type="radio" name="1" value="1A" id="1A"> A. Con người là một động vật cao cấp nhất.
+        <br>
+        <input type="radio" name="1" value="1B" id="1B"> B. Con người là con vật có lao động, có ngôn ngữ và có ý thức.
+        <br>
+        <input type="radio" name="1" value="1C" id="1C"> C. Con người vừa có bản chất tự nhiên vừa có bản chất xã hội.
+        <br>
+        <input type="radio" name="1" value="1D" id="1D"> D. Các phán đoán kia đều đúng.
+        <br>
+        <br>
+        2. Quan hệ giữa cá nhân và tập thể, xét đến cùng là mối quan hệ gì? 
+        <br>
+        <input type="radio" name="2" value="2A" id="2A"> A. Quan hệ tương trợ, giúp đỡ.
+        <br>
+        <input type="radio" name="2" value="2B" id="2B"> B. Quan hệ đấu tranh giai cấp.
+        <br>
+        <input type="radio" name="2" value="2C" id="2C"> C. Quan hệ lợi ích.
+        <br>
+        <input type="radio" name="2" value="2D" id="2D"> D. Quan hệ bảo tồn tập thể và bảo vệ cá nhân.
+        <br>
+        <br>
+        3. Vấn đề cơ bản của mọi cuộc cách mạng xã hội là vấn đề gì? 
+        <br>
+        <input type="radio" name="3" value="3A" id="3A"> A. Tiêu diệt giai cấp thống trị.
+        <br>
+        <input type="radio" name="3" value="3B" id="3B"> B. Xây dựng lực lượng vũ trang.
+        <br>
+        <input type="radio" name="3" value="3C" id="3C"> C. Cải cách chính quyền.
+        <br>
+        <input type="radio" name="3" value="3D" id="3D"> D. Giành chính quyền.
+        <br>
+        <br>
+        <button onclick="quiz()">Kiểm tra</button>
+        <p id="result-quiz"></p>
+    </div>
+    <script src="bai_tap.js"></script>
+</body>
+</html>
